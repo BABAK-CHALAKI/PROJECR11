@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="android" content="تمرین یازدهم">
+    <meta name="auther" content="Babak chalacki">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+ <h1>Android</h1>
+   
+  <div>
+    <div id="ears"></div>
+    <div id="head">
+        <div id="eye-left"></div>
+        <div id="eye-right"></div>
+    </div>
+    <div id="body"></div>
+    <div id="left-hand"></div>
+    <div id="right-hand"></div>
+    <div id="left-foot"></div>
+    <div id="right-foot"></div>
+  </div>
+
+
+
+  <script>
+
+  var head = document.getElementById("head")
+  var eye1 = document.getElementById("eye-left")
+  var eye2 = document.getElementById("eye-right")
+  var hand1 = document.getElementById("right-hand")
+  var hand2 = document.getElementById("left-hand")
+ head.onclick = function(){
+  eye1.style.height = "4px"
+  eye1.style.marginTop = "40px" 
+  eye1.style.transition = "1s"
+ }
+   hand1.onclick = function(){
+    hand2.style.transform = "rotate(45deg)"
+    hand2.style.transition = "1s"
+   }
+  </script>   
+</body>
+</html>
